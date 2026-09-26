@@ -31,5 +31,21 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
 .btn.ghost { background: transparent; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
-.page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
+.page-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.filter-item input, .filter-item select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; background: #fff; }
+.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.sort-hint { font-size: 12px; color: var(--muted); margin: 0 0 8px; }
+.pager { display: flex; align-items: center; gap: 8px; }
+.pager select { padding: 4px 6px; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.history-row > td { background: #f8fafc; }
+.history-title { margin: 4px 0 8px; font-size: 12px; color: var(--muted); }
+.history-table { width: 100%; border-collapse: collapse; background: #fff; }
+.history-table th, .history-table td { border: 1px solid var(--border); padding: 6px 8px; font-size: 12px; text-align: left; }
+tr.current td { background: #eef4ff; }
+.detail-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.detail-item { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.detail-label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+.detail-value { font-size: 15px; }
+.section-title { font-size: 14px; margin: 16px 0 8px; }
