@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Dashboard from '@/views/Dashboard.vue'
 const Fleet = () => import('@/views/fleet/index.vue')
+const FleetDetail = () => import('@/views/fleet/detail.vue')
 const Driver = () => import('@/views/driver/index.vue')
 const Order = () => import('@/views/order/index.vue')
 const Dispatch3 = () => import('@/views/dispatch3/index.vue')
@@ -27,6 +28,7 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'dashboard', component: Dashboard },
     { path: '/fleet', name: 'fleet', component: Fleet },
+    { path: '/fleet/:id', name: 'fleet-detail', component: FleetDetail },
     { path: '/driver', name: 'driver', component: Driver },
     { path: '/order', name: 'order', component: Order },
     { path: '/dispatch3', name: 'dispatch3', component: Dispatch3 },
